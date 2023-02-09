@@ -9,6 +9,22 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <div id="gameDisplay"></div>
+    <div class="gameDisplay" id="gameDisplay">
+        <div class="board" id="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+    </div>
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text>X wins!</div>
+        <button id="restartButton">Restart</button>
+    </div>
 </body>
 </html>
