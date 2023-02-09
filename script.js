@@ -5,12 +5,12 @@ const gameBoard = (() => {
   return { array };
 })();
 
-const playerCreator = (name, sign) => {
+const Player = (name, sign) => {
   const sayHello = () => console.log("hello!");
   return { name, sign };
 };
 
-const gameController = () => {
+const Game = () => {
   const initGame = () => {
     // Create a div for each section of the board (9 total)
     for (let i = 0; i < 9; i++) {
@@ -25,6 +25,6 @@ const gameController = () => {
   return { initGame, nextTurn };
 };
 
-const game = gameController();
+const game = Game();
 
 game.initGame();
