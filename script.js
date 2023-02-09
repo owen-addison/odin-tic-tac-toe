@@ -29,11 +29,20 @@ const Game = (() => {
   return { initGame, nextTurn };
 })();
 
-const Player = (name, sign) => {
+const Player = (name, marker) => {
   const sayHello = () => console.log("hello!");
-  return { name, sign };
+  return { name, marker };
 };
 
 Game.initGame();
 
 displayController.updateDisplay();
+
+/* PSUEDOCODE
+    - Players are assigned markers (either "X" or "0")
+    - Player 1 picks a position on gameBoard corresponding to particular div - [Player: makeMove()]
+    - Check whether div is empty - [Game: checkEmpty()]
+    - If true update gameBoard.array and call displayController.updateDisplay(), if false return error - [Game: handleMove()]
+    - Check for winner, if winner end game, if no winner continue game - [Game: checkForWinner()]
+    - Prompt next player's selection - [Game: changePlayer()]
+*/
