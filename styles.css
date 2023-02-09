@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#gameDisplay {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+#gameDisplay div {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    
+    border: 1px solid red;
+}
