@@ -40,7 +40,7 @@ const Game = (() => {
     if (draw) {
       winText.innerText = "Draw!";
     } else {
-      winText.innerText = `${circTurn ? "0" : "X"} Wins!`;
+      winText.innerText = `${circTurn ? "0s" : "Xs"} Wins!`;
     }
     winMessage.classList.add("show");
   };
